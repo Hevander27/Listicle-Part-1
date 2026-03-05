@@ -75,5 +75,10 @@ const renderGifts = async () => {
     }
    }
    
-   renderGifts()
-  
+   const requestedUrl = window.location.pathname.split('/')[1]
+
+   if (requestedUrl) {
+     window.location.href = '../404.html'
+   } else {
+     renderGifts()
+   }
