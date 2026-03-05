@@ -7,7 +7,7 @@ Submitted by: **Your name here**
 
 About this web app: **App description here**
 
-Time spent: **X** hours
+Time spent: **2** hours
 
 ## Required Features
 
