@@ -9,6 +9,9 @@ app.use('/public', express.static('./public'))
 // Serve static files from the 'scripts' directory
 app.use('/scripts', express.static('./public/scripts'))
 
+// Serve static files from the 'assets' directory
+app.use('/assets', express.static('./public/assets'))
+
 // Use the gifts router
 app.use('/gifts', giftsRouter)
 
