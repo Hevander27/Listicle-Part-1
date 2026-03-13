@@ -13,8 +13,7 @@ const renderGift = async () => {
     }
     
     if (gift) {
-      console.log("giftData", gift)
-      document.querySelector('#gift-content img').src = gift.image
+document.querySelector('#gift-content img').src = gift.image
       document.getElementById('name').textContent = gift.name
       document.getElementById('submittedBy').textContent = 'Submitted by: ' + gift.submittedBy
       document.getElementById('pricePoint').textContent = 'Price: ' + gift.pricePoint
