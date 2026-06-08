@@ -1,5 +1,6 @@
-# BookNook
-web103 project1
+# Listicle-Part-1 — BookNook
+
+A web app that displays some interesting data in a list, building out a complete backend that serves static HTML, as well as a minimal frontend to serve the data.
 
 # WEB103 Project 1 - *BookNook*
 
@@ -20,11 +21,11 @@ The following **required** functionality is completed:
 - [X] **The user can click on each item in the list to see a detailed view of it, including all database fields**
   - [X] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
 - [X] **The web app serves an appropriate 404 page when no matching route is defined**
-- [ ] **The web app is appropriately styled using Picocss**
+- [X] **The web app is appropriately styled using Picocss**
 
 The following **optional** features are implemented:
 
-- [ ] The web app displays items in a unique format, such as cards rather than lists
+- [X] The web app displays items in a unique format, such as cards rather than lists
 
 The following **additional** features are implemented:
 
@@ -58,4 +59,3 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 > http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
