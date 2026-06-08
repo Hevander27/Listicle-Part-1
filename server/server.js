@@ -1,5 +1,11 @@
+import './config/dotenv.js'
 import express from 'express'
+import path from 'path'
+import { fileURLToPath } from 'url'
 import giftsRouter from './routes/gifts.js'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const app = express()
 
@@ -18,6 +24,11 @@ app.use('/gifts', giftsRouter)
 // Define root route
 app.get('/', (req, res) => {
   res.status(200).send('<h1 style="text-align: center; margin-top: 50px;">BookNook API</h1>')
+})
+
+// Catch-all 404 handler for any unmatched route
+app.use((req, res) => {
+  res.status(404).sendFile(path.resolve(__dirname, './public/404.html'))
 })
 
 // Start the server
