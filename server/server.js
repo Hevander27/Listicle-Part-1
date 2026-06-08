@@ -9,22 +9,12 @@ const __dirname = path.dirname(__filename)
 
 const app = express()
 
-// Serve static files from the 'public' directory
-app.use('/public', express.static('./public'))
+// Serve all static frontend files (index.html, gift.html, scripts, assets, images)
+// from the 'public' directory at the root so the home page lives at '/'.
+app.use(express.static('./public'))
 
-// Serve static files from the 'scripts' directory
-app.use('/scripts', express.static('./public/scripts'))
-
-// Serve static files from the 'assets' directory
-app.use('/assets', express.static('./public/assets'))
-
-// Use the gifts router
+// Use the gifts router (API at /gifts, detail page at /gifts/:giftId)
 app.use('/gifts', giftsRouter)
-
-// Define root route
-app.get('/', (req, res) => {
-  res.status(200).send('<h1 style="text-align: center; margin-top: 50px;">BookNook API</h1>')
-})
 
 // Catch-all 404 handler for any unmatched route
 app.use((req, res) => {
